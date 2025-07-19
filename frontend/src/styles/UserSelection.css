@@ -1,0 +1,56 @@
+.user-selection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.select-user-group, .add-user-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #eee;
+}
+
+.user-select-dropdown, .add-user-input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.user-select-dropdown:focus, .add-user-input:focus {
+    border-color: #66b3ff;
+}
+
+.add-user-group {
+    flex-direction: row; /* For input and button side-by-side */
+    gap: 10px;
+}
+
+.add-user-input {
+    flex-grow: 1;
+}
+
+.add-user-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-user-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
